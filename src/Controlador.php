@@ -44,9 +44,19 @@ class Controlador
     {
         if(!file_exists(CONTROLADOR_DIR.$controlador.'.php') || !class_exists(CONTROLADOR_NAMESPACE.$controlador))
         {
-            throw new Exception("No existe el controlador");    
+               return $this->controladorPorDefectoExiste();
         }
 
         return $controlador;
+    }
+
+    private function controladorPorDefectoExiste(): string
+    {
+        if(!file_exists(CONTROLADOR_DIR.CONTROLADOR_POR_DEFECTO.'.php') || !class_exists(CONTROLADOR_NAMESPACE.CONTROLADOR_POR_DEFECTO))
+        {
+               throw new Exception("El controlador por defecto no existe");
+        }
+
+        return CONTROLADOR_POR_DEFECTO;
     }
 }

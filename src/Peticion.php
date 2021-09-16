@@ -1,7 +1,9 @@
 <?php
 namespace src;
 
-class Peticion
+use src\PeticionInterface;
+
+class Peticion implements PeticionInterface
 {
     private $_controlador;
     private $_metodo;

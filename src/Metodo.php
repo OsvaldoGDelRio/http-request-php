@@ -50,8 +50,6 @@ class Metodo
         return $array[1];
     }
 
-    
-
     private function elMetodoPorDefectoEsValido(): string
     {
         if (!method_exists(CONTROLADOR_NAMESPACE.$this->_controlador->controlador(), METODO_POR_DEFECTO))

@@ -13,11 +13,11 @@ class CrearPeticion implements FactoryClassInterface
     public function crear(array $array): Peticion
     {
         $enlace = new Enlace($array['url']);
-
-        $metodo = new Metodo($enlace);
+        $controlador = new Controlador($enlace);
+        $metodo = new Metodo($enlace, $controlador);
 
         return new Peticion(
-            new Controlador($enlace),
+            $controlador,
             $metodo,
             new Parametros($enlace, $metodo)
         );

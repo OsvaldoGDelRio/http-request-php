@@ -13,6 +13,7 @@
 	{
 		"psr-4":
 		{
+            "controladores\\": "controladores",
 			"src\\": "src"
 		}
 	},

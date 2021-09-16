@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "101d985e2cbfd0a931e52947160aea22",
+    "content-hash": "a57c7b1b1ecde463d9446ea55014433f",
     "packages": [
         {
             "name": "osvaldogdelrio/factory",

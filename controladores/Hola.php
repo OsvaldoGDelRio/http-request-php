@@ -5,6 +5,5 @@ class Hola
 {
     public function index(): void
     {
-        
     }
 }

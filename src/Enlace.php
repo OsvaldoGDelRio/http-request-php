@@ -17,9 +17,7 @@ class Enlace
 
     private function setEnlace(array $array): array
     {
-        
-        if(!isset($array['url']))
-        {
+        if (!isset($array['url'])) {
             return [];
         }
 

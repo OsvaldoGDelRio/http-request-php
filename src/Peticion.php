@@ -9,13 +9,11 @@ class Peticion implements PeticionInterface
     private $_metodo;
     private $_parametros;
     
-    public function __construct
-    (
+    public function __construct(
         Controlador $Controlador,
         Metodo $Metodo,
         Parametros $Parametros
-    )
-    {
+    ) {
         $this->_controlador = $Controlador;
         $this->_metodo = $Metodo;
         $this->_parametros = $Parametros;
@@ -34,5 +32,5 @@ class Peticion implements PeticionInterface
     public function parametros(): array
     {
         return $this->_parametros->parametros();
-    } 
+    }
 }

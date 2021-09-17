@@ -7,8 +7,7 @@ use src\Parametros;
 
 interface PeticionInterface
 {
-    public function __construct
-    (
+    public function __construct(
         Controlador $Controlador,
         Metodo $Metodo,
         Parametros $Parametros

@@ -30,8 +30,7 @@ class Controlador
     //controlador esta declarado
     private function controladorDeclarado(array $url)
     {
-        if(!isset($url[0]))
-        {
+        if (!isset($url[0])) {
             return CONTROLADOR_POR_DEFECTO;
         }
 
@@ -42,9 +41,8 @@ class Controlador
 
     private function controladorExiste(string $controlador): string
     {
-        if(!file_exists(CONTROLADOR_DIR.$controlador.'.php') || !class_exists(CONTROLADOR_NAMESPACE.$controlador))
-        {
-               return $this->controladorPorDefectoExiste();
+        if (!file_exists(CONTROLADOR_DIR.$controlador.'.php') || !class_exists(CONTROLADOR_NAMESPACE.$controlador)) {
+            return $this->controladorPorDefectoExiste();
         }
 
         return $controlador;
@@ -52,9 +50,8 @@ class Controlador
 
     private function controladorPorDefectoExiste(): string
     {
-        if(!file_exists(CONTROLADOR_DIR.CONTROLADOR_POR_DEFECTO.'.php') || !class_exists(CONTROLADOR_NAMESPACE.CONTROLADOR_POR_DEFECTO))
-        {
-               throw new Exception("El controlador por defecto no existe");
+        if (!file_exists(CONTROLADOR_DIR.CONTROLADOR_POR_DEFECTO.'.php') || !class_exists(CONTROLADOR_NAMESPACE.CONTROLADOR_POR_DEFECTO)) {
+            throw new Exception("El controlador por defecto no existe");
         }
 
         return CONTROLADOR_POR_DEFECTO;

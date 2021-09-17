@@ -5,6 +5,5 @@ class Controlador
 {
     public function index(): void
     {
-        
     }
 }

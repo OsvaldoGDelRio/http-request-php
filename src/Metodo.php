@@ -15,7 +15,7 @@ class Metodo
     public function __construct(Enlace $url, Controlador $controlador)
     {
         $this->_controlador = $controlador;
-        $this->_metodo = $this->setMetodo($url->enlace());  
+        $this->_metodo = $this->setMetodo($url->enlace());
     }
 
     public function metodo(): string
@@ -25,15 +25,14 @@ class Metodo
 
     private function setMetodo(array $array): string
     {
-        return $this->elMetodoEsValido($array);   
+        return $this->elMetodoEsValido($array);
     }
 
     private function elMetodoEsValido(array $array): string
     {
         $metodo = $this->elMetodoEstaDefinido($array);
 
-        if (!method_exists(CONTROLADOR_NAMESPACE.$this->_controlador->controlador(), $metodo))
-        {
+        if (!method_exists(CONTROLADOR_NAMESPACE.$this->_controlador->controlador(), $metodo)) {
             return $this->elMetodoPorDefectoEsValido();
         }
 
@@ -42,8 +41,7 @@ class Metodo
 
     private function elMetodoEstaDefinido(array $array): string
     {
-        if(!isset($array[1]))
-        {
+        if (!isset($array[1])) {
             return METODO_POR_DEFECTO;
         }
 
@@ -52,12 +50,10 @@ class Metodo
 
     private function elMetodoPorDefectoEsValido(): string
     {
-        if (!method_exists(CONTROLADOR_NAMESPACE.$this->_controlador->controlador(), METODO_POR_DEFECTO))
-        {
+        if (!method_exists(CONTROLADOR_NAMESPACE.$this->_controlador->controlador(), METODO_POR_DEFECTO)) {
             throw new Exception("El método por defecto no está declarado");
         }
 
         return METODO_POR_DEFECTO;
     }
-
 }

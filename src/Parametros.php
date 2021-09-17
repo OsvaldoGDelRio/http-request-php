@@ -19,16 +19,12 @@ class Parametros
     {
         unset($this->_url[0]);
 
-        if(isset($this->_url[1]))
-        {
-            if($this->_metodo->metodo() == $this->_url[1])
-            {
+        if (isset($this->_url[1])) {
+            if ($this->_metodo->metodo() == $this->_url[1]) {
                 unset($this->_url[1]);
             }
-        }        
+        }
 
         return $this->_url ? array_values($this->_url) : [];
     }
 }
-
-

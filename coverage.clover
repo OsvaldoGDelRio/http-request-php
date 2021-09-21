@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1632171086">
+  <project timestamp="1632171086">
+    <file name="C:\xampp\htdocs\http-request-php\src\Controlador.php">
+      <class name="src\Controlador" namespace="global">
+        <metrics complexity="11" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="8" elements="19" coveredelements="11"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="17" type="stmt" count="4"/>
+      <line num="18" type="stmt" count="4"/>
+      <line num="20" type="method" name="controlador" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="22" type="stmt" count="4"/>
+      <line num="25" type="method" name="setControlador" visibility="private" complexity="1" crap="1" count="4"/>
+      <line num="27" type="stmt" count="4"/>
+      <line num="31" type="method" name="controladorDeclarado" visibility="private" complexity="2" crap="2.15" count="4"/>
+      <line num="33" type="stmt" count="4"/>
+      <line num="34" type="stmt" count="4"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="42" type="method" name="controladorExiste" visibility="private" complexity="3" crap="3.33" count="4"/>
+      <line num="44" type="stmt" count="4"/>
+      <line num="45" type="stmt" count="0"/>
+      <line num="48" type="stmt" count="4"/>
+      <line num="51" type="method" name="controladorPorDefectoExiste" visibility="private" complexity="3" crap="12" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <metrics loc="59" ncloc="57" classes="1" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="8" elements="19" coveredelements="11"/>
+    </file>
+    <file name="C:\xampp\htdocs\http-request-php\src\CrearPeticion.php">
+      <class name="src\CrearPeticion" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+      </class>
+      <line num="13" type="method" name="crear" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <metrics loc="25" ncloc="25" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+    </file>
+    <file name="C:\xampp\htdocs\http-request-php\src\Enlace.php">
+      <class name="src\Enlace" namespace="global">
+        <metrics complexity="4" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="9" coveredelements="7"/>
+      </class>
+      <line num="8" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="10" type="stmt" count="4"/>
+      <line num="11" type="stmt" count="4"/>
+      <line num="13" type="method" name="enlace" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="15" type="stmt" count="4"/>
+      <line num="18" type="method" name="setEnlace" visibility="private" complexity="2" crap="2.15" count="4"/>
+      <line num="20" type="stmt" count="4"/>
+      <line num="21" type="stmt" count="4"/>
+      <line num="24" type="stmt" count="0"/>
+      <metrics loc="26" ncloc="26" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="5" elements="9" coveredelements="7"/>
+    </file>
+    <file name="C:\xampp\htdocs\http-request-php\src\Metodo.php">
+      <class name="src\Metodo" namespace="global">
+        <metrics complexity="9" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="10" elements="21" coveredelements="13"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="17" type="stmt" count="4"/>
+      <line num="18" type="stmt" count="4"/>
+      <line num="19" type="stmt" count="4"/>
+      <line num="21" type="method" name="metodo" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="23" type="stmt" count="1"/>
+      <line num="26" type="method" name="setMetodo" visibility="private" complexity="1" crap="1" count="4"/>
+      <line num="28" type="stmt" count="4"/>
+      <line num="31" type="method" name="elMetodoEsValido" visibility="private" complexity="2" crap="2.06" count="4"/>
+      <line num="33" type="stmt" count="4"/>
+      <line num="35" type="stmt" count="4"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="4"/>
+      <line num="42" type="method" name="elMetodoEstaDefinido" visibility="private" complexity="2" crap="2.15" count="4"/>
+      <line num="44" type="stmt" count="4"/>
+      <line num="45" type="stmt" count="4"/>
+      <line num="48" type="stmt" count="0"/>
+      <line num="51" type="method" name="elMetodoPorDefectoEsValido" visibility="private" complexity="2" crap="6" count="0"/>
+      <line num="53" type="stmt" count="0"/>
+      <line num="54" type="stmt" count="0"/>
+      <line num="57" type="stmt" count="0"/>
+      <metrics loc="59" ncloc="59" classes="1" methods="6" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="10" elements="21" coveredelements="13"/>
+    </file>
+    <file name="C:\xampp\htdocs\http-request-php\src\Parametros.php">
+      <class name="src\Parametros" namespace="global">
+        <metrics complexity="5" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="6" elements="10" coveredelements="7"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="14" type="stmt" count="4"/>
+      <line num="15" type="stmt" count="4"/>
+      <line num="16" type="stmt" count="4"/>
+      <line num="18" type="method" name="parametros" visibility="public" complexity="4" crap="5.02" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="22" type="stmt" count="1"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="1"/>
+      <metrics loc="30" ncloc="30" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="6" elements="10" coveredelements="7"/>
+    </file>
+    <file name="C:\xampp\htdocs\http-request-php\src\Peticion.php">
+      <class name="src\Peticion" namespace="global">
+        <metrics complexity="4" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
+      </class>
+      <line num="12" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="17" type="stmt" count="4"/>
+      <line num="18" type="stmt" count="4"/>
+      <line num="19" type="stmt" count="4"/>
+      <line num="20" type="stmt" count="4"/>
+      <line num="22" type="method" name="controlador" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="24" type="stmt" count="2"/>
+      <line num="27" type="method" name="metodo" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="29" type="stmt" count="1"/>
+      <line num="32" type="method" name="parametros" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <metrics loc="36" ncloc="36" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
+    </file>
+    <file name="C:\xampp\htdocs\http-request-php\src\PeticionInterface.php">
+      <metrics loc="21" ncloc="21" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <metrics files="7" loc="256" ncloc="254" classes="6" methods="22" coveredmethods="13" conditionals="0" coveredconditionals="0" statements="55" coveredstatements="36" elements="77" coveredelements="49"/>
+  </project>
+</coverage>
